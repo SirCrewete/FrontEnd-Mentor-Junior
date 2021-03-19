@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 62.5%;
+
+    /* DARK MODE */
+    --VeryDarkBlue: hsl(230, 17%, 14%);
+    --VeryDarkBluePattern: hsl(232, 19%, 15%);
+    --DarkDesaturatedBlue: hsl(228, 28%, 20%);
+    --DesaturatedBlue: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --LetterColor: #8087ab;
+
+    /* LIGHT MODE */
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --LightGrayishBlue: hsl(227, 47%, 96%);
+    --DarkGrayishBlue: hsl(228, 12%, 44%);
+    --VeryDarkBlue: hsl(230, 17%, 14%);
+   
+
+    /* LIGHT MODE */
+    --Toggle: linear-gradient(135deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+html {
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+/* Color VAR */
+.text-darkGray {
+    color: var (--DarkGrayishBlue);
+}
+
+.text-darkBlue {
+    color: var(--VeryDarkBlue);
+}
+.text-darkBlue {
+    color: var(--DarkDesaturatedBlue);
+}
+.text-desaturatedBlue {
+    color: var(--DesaturatedBlue);
+}
+.text-white {
+    color: var(--White);
+}
+
+
+
+
+/* FontSize */
+
+.text-xs {
+    font-size: 1.5rem;
+}
+.text-xl {
+    font-size: 1.5rem;
+}
+.text-xxl {
+    font-size: 3.8rem;
+}
+
+body {
+    text-align: center;
+}
+
+body,
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+    margin: auto;
+}
+
+.darkmode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    margin: 2.5rem 3rem;
+    color: #8087ab;
+}
+
+#switch {
+    width: 60px;
+    height: 32px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 2.4rem;
+}
+
+#switch:hover{
+    opacity: 72%;
+}
+
+#switch .switch-button {
+    width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #252b42;
+	margin: 4px;
+}
+
+/* MOBILE */
+
+body {
+    background-color: var(--VeryDarkBlue);
+}
+
+.container {
+    box-sizing: border-box;
+    min-width: 375px;
+    padding: 0 2.4rem;
+}
+
+header {
+    margin-top: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #20222f;
+    height: 29rem;
+    max-width: 48rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main {
+  position: absolute;
+  top: 27rem;
+  width: 100%;
+}
+
+.recountFollowers {
+    padding: 1rem;
+    color: var(--DarkGrayishBlue);
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    color: #8087ab;
+}
+
+.card {
+    background-color: #252b42;
+    box-sizing: border-box;
+    max-width: 330px;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nameLink {
+    color: #8087ab;
+    margin-top: 2rem;
+}
+
+.number {
+    margin-top: 1.6rem;
+}
+
+.today {
+    padding: 2rem;
+}
+
+.title {
+    letter-spacing: 5px;
+    color: #8087ab;
+}
+
+.color-bar {
+    position: relative;
+    background: #198ff3;
+    /*
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    */
+    width: 100%;
+    top: 0;
+    height: 5px;
+  }
+
+  .separadora {
+    position: relative;
+    background-color: #2e303f;
+    width: 80%;
+    height: 1px;
+    margin: auto 3rem;
+  }
