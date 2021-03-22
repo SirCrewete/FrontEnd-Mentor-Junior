@@ -115,6 +115,9 @@ h4 {
 	margin: 4px;
 }
 
+.social {
+    padding: 1.6rem;
+}
 /* MOBILE */
 
 body {
@@ -129,8 +132,7 @@ body {
 
 header {
     margin-top: 6.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5rem auto;
     background-color: #20222f;
     height: 29rem;
     max-width: 48rem;
@@ -202,4 +204,48 @@ main {
     width: 80%;
     height: 1px;
     margin: auto 3rem;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media screen and (min-width: 960px){
+     :root{
+         font-size: 60%;
+     }
+     
+     header {
+        padding: 5rem 40rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        height: 20rem;      
+         
+     }
+
+     .social {
+         text-align: start;
+     }
+
+     .darkmode {
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+
+     .separadora {
+         display: none;
+     }
+
+     main{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         top: 38rem; 
+     }
+     .card {
+         padding: 4rem;
+         margin: 2rem;
+     }
   }
