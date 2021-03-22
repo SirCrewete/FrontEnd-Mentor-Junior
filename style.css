@@ -20,7 +20,7 @@
     --VeryDarkBlue: hsl(230, 17%, 14%);
    
 
-    /* LIGHT MODE */
+    --Green: hsl(137, 59%, 50%);
     --Toggle: linear-gradient(135deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 html {
@@ -45,6 +45,10 @@ html {
 }
 .text-white {
     color: var(--White);
+}
+
+.text-green {
+    color: var(--Green);
 }
 
 
@@ -131,8 +135,8 @@ body {
 }
 
 header {
+    margin: auto;
     margin-top: 6.5rem;
-    margin: 5rem auto;
     background-color: #20222f;
     height: 29rem;
     max-width: 48rem;
@@ -142,8 +146,8 @@ header {
 
 main {
   position: absolute;
-  top: 27rem;
-  width: 100%;
+  top: 28rem;
+  width: 96%;
 }
 
 .recountFollowers {
@@ -205,6 +209,44 @@ main {
     height: 1px;
     margin: auto 3rem;
   }
+
+  h2 {
+      font-size: 3rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;  
+  }
+
+  .secondCard {
+    background-color: #252b42;
+    box-sizing: border-box;
+    max-width: 330px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3rem;
+  }
+
+  .page {
+      margin-bottom: 2em;
+      color: var(--DarkGrayishBlue);      
+  }
+
+  .imgPercent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .instaImg {
+      height: 20px;
+      width: 20px;
+  }
+
 
   /* MEDIA QUERIES */
 
