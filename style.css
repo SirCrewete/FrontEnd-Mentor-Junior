@@ -21,6 +21,7 @@
    
 
     --Green: hsl(137, 59%, 50%);
+    --Red: hsl(0, 100%, 50%);
     --Toggle: linear-gradient(135deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 html {
@@ -51,6 +52,9 @@ html {
     color: var(--Green);
 }
 
+.text-red {
+    color: var(--Red);
+}
 
 
 
@@ -107,6 +111,7 @@ h4 {
     margin: 0 2.4rem;
 }
 
+
 #switch:hover{
     opacity: 72%;
 }
@@ -146,9 +151,11 @@ header {
 
 main {
   position: absolute;
-  top: 28rem;
+  top: 40rem;
   width: 96%;
 }
+
+
 
 .recountFollowers {
     padding: 1rem;
@@ -166,6 +173,15 @@ main {
     margin: 20px auto;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.card-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
 }
 
 .nameLink {
@@ -186,7 +202,7 @@ main {
     color: #8087ab;
 }
 
-.color-bar {
+.color-bar-blue {
     position: relative;
     background: #198ff3;
     /*
@@ -201,6 +217,39 @@ main {
     top: 0;
     height: 5px;
   }
+
+  .color-bar_gradient {
+    position: relative;
+    background: #93236b;
+    /*
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    */
+    width: 100%;
+    top: 0;
+    height: 5px;
+  }
+
+  .color-bar_red {
+    position: relative;
+    background: red;
+    /*
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    */
+    width: 100%;
+    top: 0;
+    height: 5px;
+  }
+  
 
   .separadora {
     position: relative;
@@ -240,6 +289,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-end;
   }
 
   .instaImg {
@@ -250,23 +300,32 @@ main {
 
   /* MEDIA QUERIES */
 
+  @media screen and (min-width: 490px){
+      main{
+          top: 28rem;
+      }
+  }
+
   @media screen and (min-width: 960px){
      :root{
          font-size: 60%;
      }
      
      header {
-        padding: 5rem 40rem;
         max-width: 100%;
         display: flex;
-        flex-direction: column; 
+        flex-direction: row; 
         justify-content: space-around;
-        height: 20rem;      
-         
+        height: 20rem;   
+        padding: 5rem 5rem;   
      }
 
      .social {
          text-align: start;
+     }
+
+     .darkModeTitle{
+         width: 10rem;
      }
 
      .darkmode {
@@ -279,15 +338,44 @@ main {
          display: none;
      }
 
+     .titleFollowers {
+         width: 100%;
+         margin-top: 3rem;
+         margin-left: 3rem;
+}
+
      main{
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: center;
-         top: 38rem; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
      }
      .card {
-         padding: 4rem;
          margin: 2rem;
+         width: 240px;
+         height: 240px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         overflow: hidden;
      }
+
+
+     .overviewSeparador {
+         width: 100%;
+         display: flex;
+         align-content: flex-start;
+         margin-left: 9rem;
+     }
+
+     .secondCard {
+         margin: 3rem;
+         width: 300rem;
+     }
+
+     .bar{
+         height: 1rem;
+     }
+
   }
